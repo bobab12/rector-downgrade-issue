@@ -1,0 +1,8 @@
+{
+    "require-dev": {
+        "rector/rector": "^0.12.20"
+    },
+    "require": {
+        "symfony/config": "5.2.12"
+    }
+}
