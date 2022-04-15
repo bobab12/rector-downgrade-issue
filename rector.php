@@ -19,10 +19,13 @@ return static function (ContainerConfigurator $containerConfigurator): void {
         ->set(Option::PATHS, [
             __DIR__ . '/app'
         ])
+        ->set(Option::BOOTSTRAP_FILES, [
+            __DIR__ . '/stubs/symfony.php',
+        ])
         ->set(Option::SKIP, [
             __DIR__ . '/app/vendor/phpstan/*',
             __DIR__ . '/app/vendor/rector/*',
         ])
-        // ->set(Option::PARALLEL, true)
+        ->set(Option::PARALLEL, true)
     ;
 };
